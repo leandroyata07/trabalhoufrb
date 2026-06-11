@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolinha ABC - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Checkbox para o menu hambúrguer -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- Logo em minúsculo para evitar caminhos quebrados em servidores case-sensitive -->
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logotipo da Escolinha ABC" width="200" height="200">
+        </a>
+        
+        <!-- Dark Mode Toggle -->
+        <div class="theme-switch-wrapper">
+            <input type="checkbox" id="dark-mode-toggle" class="dark-mode-input">
+            <label for="dark-mode-toggle" class="dark-mode-label" title="Alternar Tema">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Quem Somos</a></li>
+                <li><a href="cursos.html"><i class="fa-solid fa-shapes"></i> Proposta Pedagógica</a></li>
+                <li><a href="contato.html"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><i class="fa-solid fa-comments"></i> Fale Conosco</h1>
+        <p>A Escolinha ABC está sempre de portas abertas para receber sua família. Entre em contato conosco para agendar
+            uma visita guiada, tirar dúvidas ou solicitar informações sobre matrículas.</p>
+
+        <!-- Seção: Informações de Endereço e Telefone (Exigência Obrigatória) -->
+        <section>
+            <h2><i class="fa-solid fa-address-book"></i> Informações de Contato</h2>
+            <p>Se preferir um contato direto, utilize um de nossos canais administrativos ou faça-nos uma visita
+                presencial:</p>
+
+            <address>
+                <p><strong>Endereço Físico:</strong> Rua Exemplo, 123 - Centro, Feira de Santana - BA, CEP 44000-000</p>
+                <p><strong>Telefone Principal:</strong> <a href="tel:+5575999999999"
+                        title="Clique para ligar para a escola">(75) 99999-9999</a> (Ligações e WhatsApp Comercial)</p>
+                <p><strong>E-mail Institucional:</strong> <a href="mailto:contato@escolinhaabc.com.br"
+                        title="Clique para enviar um e-mail para a escola">contato@escolinhaabc.com.br</a></p>
+                <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta-feira, das 07h00 às 18h00</p>
+            </address>
+        </section>
+
+        <!-- Seção: Mapa de Localização (Exigência Obrigatória) -->
+        <section>
+            <h2><i class="fa-solid fa-map-location-dot"></i> Nossa Localização</h2>
+            <p>Localizada em uma zona residencial central de fácil acesso, com segurança e vagas exclusivas para
+                embarque e desembarque rápido de alunos:</p>
+
+            <figure>
+                <!-- Iframe do Google Maps configurado de forma totalmente acessível com título descritivo -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0432573215286!2d-38.96696412494576!3d-12.245277787994685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71439db79a32c25%3A0xc3cf3388a1e8093d!2sFeira%20de%20Santana%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1717094400000!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa interativo mostrando a localização exata da Escolinha ABC"></iframe>
+                <figcaption>Mapa interativo de localização da Escolinha ABC</figcaption>
+            </figure>
+        </section>
+
+        <!-- Seção: Formulário de Contato Completo (Exigência Obrigatória) -->
+        <section>
+            <h2><i class="fa-solid fa-paper-plane"></i> Envie uma Mensagem</h2>
+            <p>Preencha os campos abaixo com os seus dados. Nossa equipe pedagógica ou administrativa entrará em contato
+                o mais rápido possível.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome Completo (obrigatório):</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail de Contato (obrigatório, formato exemplo@email.com):</label><br>
+                    <input type="email" id="email" name="email" placeholder="nome@provedor.com" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone para Contato (opcional):</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(75) 99999-9999">
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto Principal (obrigatório):</label><br>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="matricula">Processo de Matrícula</option>
+                        <option value="duvidas">Dúvidas Gerais</option>
+                        <option value="sugestoes">Sugestões e Críticas</option>
+                        <option value="reuniao">Agendar Reunião de Visita</option>
+                        <option value="recursos">Dúvidas sobre Proposta Pedagógica</option>
+                        <option value="outros">Outros Assuntos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem Detalhada (obrigatório, mínimo de 20 caracteres):</label><br>
+                    <textarea id="mensagem" name="mensagem"
+                        placeholder="Escreva aqui sua dúvida ou solicitação com no mínimo 20 caracteres..." required
+                        minlength="20" rows="6" cols="45"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacidade" name="privacidade" required>
+                    <label for="privacidade">Li e concordo expressamente com os termos da política de privacidade para
+                        tratamento de dados comerciais de contato.</label>
+                </p>
+
+                <p>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</button>
+                    <button type="reset">Limpar Formulário</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>Rua Exemplo, 123 - Centro | Telefone: (75) 99999-9999 | Email: contato@escolinhaabc.com.br</address>
+
+        <p>Desenvolvido por Leandro Yata</p>
+    </footer>
+</body>
+
+</html>

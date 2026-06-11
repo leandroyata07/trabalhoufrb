@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolinha ABC - Quem Somos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Checkbox para o menu hambúrguer -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- Logo em minúsculo para evitar caminhos quebrados em servidores case-sensitive -->
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logotipo da Escolinha ABC" width="200" height="200">
+        </a>
+        
+        <!-- Dark Mode Toggle -->
+        <div class="theme-switch-wrapper">
+            <input type="checkbox" id="dark-mode-toggle" class="dark-mode-input">
+            <label for="dark-mode-toggle" class="dark-mode-label" title="Alternar Tema">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-users"></i> Quem Somos</a></li>
+                <li><a href="cursos.html"><i class="fa-solid fa-shapes"></i> Proposta Pedagógica</a></li>
+                <li><a href="contato.html"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção 1: Nossa História (História da instituição) -->
+        <section>
+            <h1><i class="fa-solid fa-users"></i> Quem Somos</h1>
+            <p>A Escolinha ABC nasceu em 2015 a partir do sonho compartilhado de um grupo de educadores apaixonados pelo desenvolvimento infantil. Percebendo a carência na região de espaços que integrassem de forma efetiva o afeto, a estimulação sensorial precoce e o respeito ao ritmo biológico e emocional de bebês e crianças pequenas, idealizamos um ambiente inovador.</p>
+            <p>Com o passar dos anos, expandimos nossas instalações e nossas turmas, mas preservamos nossa essência familiar e afetiva, servindo como uma extensão do lar e garantindo que o aprendizado ocorra de maneira natural e extremamente prazerosa através da ludicidade e do contato com a natureza.</p>
+            <figure>
+                <img src="images/ambiente-1.png" alt="Área externa gramada da escola com parquinho colorido e árvores ao redor" width="600" height="400">
+                <figcaption>Área verde externa da Escolinha ABC, planejada para o livre brincar</figcaption>
+            </figure>
+        </section>
+
+        <!-- Seção 2: Equipe/Corpo Docente (Exigência Obrigatória: mínimo 6 membros com descrição) -->
+        <section>
+            <h2><i class="fa-solid fa-chalkboard-user"></i> Nossa Equipe</h2>
+            <p>Acreditamos que a qualidade pedagógica reside no afeto e na competência profissional. Nosso corpo docente é composto por profissionais titulados em Pedagogia ou áreas especializadas da saúde e do desenvolvimento infantil:</p>
+            
+            <figure>
+                <img src="images/equipe.png" alt="Profissionais da escola sorrindo reunidos na sala de reuniões pedagógicas" width="600" height="400">
+                <figcaption>Equipe diretiva e pedagógica da Escolinha ABC</figcaption>
+            </figure>
+            
+            <!-- Listagem estruturada da equipe com artigos semânticos -->
+            <div>
+                <article>
+                    <h3>Laurah Silva</h3>
+                    <p><strong>Cargo:</strong> Coordenadora Pedagógica</p>
+                    <p>Mestre em Educação Infantil e Gestão Escolar pela Universidade Federal, com mais de 12 anos de atuação na liderança de projetos de desenvolvimento de diretrizes pedagógicas e formação contínua de professores.</p>
+                </article>
+
+                <article>
+                    <h3>Luísa Santos</h3>
+                    <p><strong>Cargo:</strong> Professora Especialista do Berçário</p>
+                    <p>Graduada em Pedagogia com pós-graduação em Estimulação Precoce e Psicomotricidade na Primeira Infância. Responsável pelos planos de desenvolvimento sensorial e acolhimento dos bebês no lactário.</p>
+                </article>
+
+                <article>
+                    <h3>Analuz Costa</h3>
+                    <p><strong>Cargo:</strong> Professora do Grupo 1 (G1)</p>
+                    <p>Licenciada em Pedagogia com certificação internacional em musicalização infantil. Utiliza a música como ferramenta principal para aquisição da linguagem e desenvolvimento do ritmo motor fino.</p>
+                </article>
+
+                <article>
+                    <h3>Maria Ferreira</h3>
+                    <p><strong>Cargo:</strong> Professora do Grupo 2 (G2)</p>
+                    <p>Especialista em contação de histórias lúdicas e literatura infantil. Atua ativamente no estímulo da socialização, no controle de esfíncteres e na ampliação da independência e expressão oral das crianças.</p>
+                </article>
+
+                <article>
+                    <h3>Melissa Ramos</h3>
+                    <p><strong>Cargo:</strong> Nutricionista Escolar</p>
+                    <p>Graduada em Nutrição com foco em Pediatria. Responsável por planejar cardápios saudáveis adaptados a alergias ou intolerâncias, além de ministrar oficinas de introdução alimentar lúdica.</p>
+                </article>
+
+                <article>
+                    <h3>Helena Souza</h3>
+                    <p><strong>Cargo:</strong> Auxiliar de Desenvolvimento e Apoio</p>
+                    <p>Técnica em Cuidados Infantis e Primeiros Socorros. Auxilia as professoras nas rotinas de higiene, alimentação, repouso e segurança, garantindo um ambiente totalmente protegido para os alunos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção 3: Infraestrutura/Recursos Disponíveis (Exigência Obrigatória) -->
+        <section>
+            <h2><i class="fa-solid fa-building"></i> Nossa Infraestrutura</h2>
+            <p>Cada detalhe físico da Escolinha ABC foi projetado sob os mais rígidos padrões de segurança e ergonomia infantil, criando cenários ideais para a exploração e o aprendizado ativo:</p>
+
+            <figure>
+                <img src="images/infraestrutura.png" alt="Instalações modernas e coloridas da Escolinha ABC" width="600" height="400">
+                <figcaption>Instalações modernas, seguras e adaptadas da Escolinha ABC</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Berçário Sensorial Climatizado:</strong> Ambiente aconchegante equipado com piso vinílico térmico e emborrachado, espelhos inquebráveis à altura dos bebês, brinquedos com texturas e estimulação sensorial variada, além de lactário higienizado integrado.</li>
+                <li><strong>Parque Infantil Externo Ecológico:</strong> Área aberta com gramado natural, caixa de areia fina devidamente tratada e higienizada, brinquedos de madeira certificada e mini horta orgânica cultivada pelos próprios alunos.</li>
+                <li><strong>Salas de Aula Temáticas:</strong> Ambientes extremamente arejados e iluminados por luz natural, com estantes de fácil acesso que promovem a autonomia da criança ao escolher materiais educativos de acordo com o método Montessori.</li>
+                <li><strong>Refeitório Infantil Ergonômico:</strong> Espaço planejado para a construção de hábitos alimentares saudáveis e saudáveis interações sociais, com mesas e cadeiras adequadas à altura de cada faixa etária.</li>
+                <li><strong>Ateliê de Artes e Musicalização:</strong> Sala equipada com instrumentos musicais adequados para crianças pequenas e materiais de pintura, modelagem e expressão corporal.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- O rodapé agora está corretamente aninhado como irmão de <main>, não filho -->
+    <footer>
+        <address>Rua Exemplo, 123 - Centro | Telefone: (75) 99999-9999 | Email: contato@escolinhaabc.com.br</address>
+
+        <p>Desenvolvido por Leandro Yata</p>
+    </footer>
+</body>
+</html>
